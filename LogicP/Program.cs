@@ -13,7 +13,7 @@ namespace LogicP
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1 for Gambler\n"+"Enter 2 to Generate Coupan Number\n");
+                Console.WriteLine("Enter 1 for Gambler\n"+"Enter 2 to Generate Coupan Number\n"+"Enter 3  for Stopwatch");
                 int n = Convert.ToInt32(Console.ReadLine());
                 switch (n)
                 {
@@ -27,6 +27,10 @@ namespace LogicP
                         coupanNumber.Generate();
                         break;
                     case 3:
+                        StopWatch stopWatch = new StopWatch();
+                        stopWatch.Watch();
+                        break;
+                    case 4:
                         flag = false;
                         break;
                     default:
