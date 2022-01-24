@@ -19,7 +19,7 @@ namespace LogicP
             while (flag)
             {
                 int coupan=random.Next(1,1000);
-        //        Console.WriteLine(coupan);
+               Console.WriteLine(coupan);
                 if (!numbers.Contains(coupan))
                 {
                     ans++;
