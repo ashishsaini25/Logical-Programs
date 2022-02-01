@@ -14,7 +14,8 @@ namespace LogicP
             while (flag)
             {
                 Console.WriteLine("Enter 1 for Gambler\n" + "Enter 2 to Generate Coupan Number\n" + "Enter 3  for Stopwatch\n"
-                    + "Enter 4 to play Tic-Tac-Toe\n"+"Enter 5 to fibonacci\n"+"Enter 6 for perfect number\n"+"Enter 7 for Prime\n");
+                    + "Enter 4 to play Tic-Tac-Toe\n"+"Enter 5 to fibonacci\n"+"Enter 6 for perfect number\n"+"Enter 7 for Prime\n"
+                    +"Enter 8 to reverse a number\n");
                 int n = Convert.ToInt32(Console.ReadLine());
                 switch (n)
                 {
@@ -48,6 +49,10 @@ namespace LogicP
                         prime.Verify();
                         break;
                     case 8:
+                        ReverseNumber number = new ReverseNumber();
+                        number.Reverse();
+                        break;
+                    case 9:
                         flag = false;
                         break;
                     
