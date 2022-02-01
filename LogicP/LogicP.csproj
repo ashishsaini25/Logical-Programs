@@ -46,6 +46,7 @@
     <Compile Include="CoupanNumber.cs" />
     <Compile Include="Fibonacii.cs" />
     <Compile Include="Gambler.cs" />
+    <Compile Include="PerfectNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StopWatch.cs" />
