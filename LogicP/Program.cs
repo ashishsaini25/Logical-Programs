@@ -13,7 +13,8 @@ namespace LogicP
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1 for Gambler\n"+"Enter 2 to Generate Coupan Number\n"+"Enter 3  for Stopwatch");
+                Console.WriteLine("Enter 1 for Gambler\n" + "Enter 2 to Generate Coupan Number\n" + "Enter 3  for Stopwatch\n"
+                    + "Enter 4 to play Tic-Tac-Toe\n"+"Enter 5 to fibonacci\n");
                 int n = Convert.ToInt32(Console.ReadLine());
                 switch (n)
                 {
@@ -31,8 +32,19 @@ namespace LogicP
                         stopWatch.Watch();
                         break;
                     case 4:
+                        Tic_Tac tic_Tac = new Tic_Tac();
+                        tic_Tac.Play();
+                        break;
+                    case 5:
+                        Fibonacii fibonacii = new Fibonacii();
+                        fibonacii.Print();
+                        break;
+                    case 6:
                         flag = false;
                         break;
+                    
+
+
                     default:
                         Console.WriteLine("Please enter the correct option\n");
                         break;
