@@ -10,7 +10,7 @@ namespace LogicP
     {
        public void Print()
         {
-            Console.WriteLine("Enter the no of terms\n");
+            Console.WriteLine("Enter the no  of terms\n");
             int n = Convert.ToInt32(Console.ReadLine());
             int first = 0;
             int second = 1;
